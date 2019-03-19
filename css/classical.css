@@ -1,0 +1,73 @@
+/*-- BODY --*/
+    body
+    {
+        background-color: rgba(255, 255, 204, 1);
+    }
+/*-- BODY --*/
+/*-- HEADER --*/
+    #headerContainer
+    {
+        background-color: rgba(255,255,204,.9);
+    }
+    #headerContainer div.asImg
+    {
+        background-image: url(../images/header_img.jpeg);
+        opacity: 0.65;
+    }
+    #headerContainer #parrafoHeader
+    {
+        background-color: rgba(255, 255, 210, 0.4);
+        box-shadow: 0 0 20px rgba(255, 255, 210, .85);
+    }
+    #headerContainer #parrafoHeader h1
+    {
+        border-bottom: 2px solid grey;
+    }
+/*-- HEADER --*/
+/*-- FIRSTMSG --*/
+    #firstMsg::before
+    {
+        background: -moz-linear-gradient(bottom, rgba(255,255,204,.9), transparent);
+    }
+/*-- FIRSTMSG --*/
+/*-- NAV --*/
+    nav
+    {
+        background-color: rgba(255, 255, 204, 0.6);
+        box-shadow: 0 7px 10px rgba(255, 255, 204, 0.6);
+    }
+/*-- NAV --*/
+/*-- sliderSect --*/
+.jumbotron
+{
+    background-color: transparent;
+}
+#sliderSect #carouselExampleCaptions .carousel-inner .carousel-item::before
+{
+    background: radial-gradient( transparent 59%, rgba(255, 255, 204, 1) 71%);
+}
+/*-- sliderSect --*/
+
+
+/*-- KeyFrames --*/
+    @keyframes classical {
+        from{
+            background-color: rgba(255, 255, 204, 0.6);
+            box-shadow: 0 7px 10px rgba(255, 255, 204, 0.6);
+        }
+        to{
+            box-shadow: none;
+            background-color: rgba(255,255,240,.98);
+        }
+    }
+    @keyframes back_classical {
+        from{
+            box-shadow: none;
+            background-color: rgba(255,255,240,.98);
+        }
+        to{
+            background-color: rgba(255, 255, 204, 0.6);
+            box-shadow: 0 7px 10px rgba(255, 255, 204, 0.6);
+        }
+    }
+/*-- KeyFrames --*/

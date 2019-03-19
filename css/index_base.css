@@ -1,0 +1,101 @@
+/*-- HEADER --*/
+    #headerContainer div.asImg
+    {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+    #headerContainer #parrafoHeader
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 12px;
+        transform: translate(-50%,-50%);
+    }
+/*-- HEADER --*/
+/*-- FIRSTMSG--*/
+    #firstMsg::before
+    {
+        content: "";
+        position: absolute;
+        height: 25vh;
+        width: 100%;
+        bottom: 0;
+    }
+/*-- FIRSTMSG--*/
+/*-- NAV --*/
+nav
+{
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+/*-- NAV --*/
+/*-- sliderSect --*/
+.jumbotron.mw-lg-75
+{
+    max-width: 75%;
+}
+#sliderSect #carouselExampleCaptions .carousel-inner .carousel-item::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#sliderSect #carouselExampleCaptions .carousel-inner .carousel-item img
+{
+    border-radius: 20%;
+}
+/*-- sliderSect --*/
+#jumbotron_CardsDeck{}
+#mappingZone{}
+#linksAndFun{}
+
+
+section:nth-child(odd){
+
+}
+section:nth-child(even){
+    height: 1000px;
+    background-color: blue;/*lightgoldenrodyellow;*/
+}
+
+/*-- Media --*/
+    @media screen and (max-width:991.98px){
+        /*-- NAV --*/
+        .expansibleNav-collapse
+        {
+            position: fixed;
+            top:56px;
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            overflow-y: auto;
+            overflow-x: hidden;
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out, visibility .2s ease-in-out;
+            transition: transform .2s ease-in-out, visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
+
+        .expansibleNav-collapse.expandNav
+        {
+            visibility: visible;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+        /*-- NAV --*/
+        /*-- sliderSect --*/
+        .jumbotron.mw-lg-75
+        {
+            max-width: 100%;
+        }
+        /*-- sliderSect --*/
+    }
+/*-- Media --*/
