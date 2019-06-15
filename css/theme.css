@@ -9,7 +9,7 @@ body header,body section, body footer{
     height: 400px;
 }
 
-header div#carouselExampleCaptions div.carousel-inner.h-100vh{
+header div#carouselExampleCaptions div.carousel-inner.h-100vh div.carousel-item{
     height: 100vh;
 }
 
@@ -27,8 +27,8 @@ header div#carouselExampleCaptions div.carousel-inner div.carousel-item #uno{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vmax;
-    width: 100vmin;
+    height: 100%;
+    width: 100%;
 }
 
 header div#carouselExampleCaptions div.carousel-inner div.carousel-item div{
