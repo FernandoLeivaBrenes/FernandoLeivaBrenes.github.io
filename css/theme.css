@@ -1,0 +1,79 @@
+/*-- BODY --*/
+body{
+    position: relative;
+    background-color: #0646ad;
+}
+/*-- BODY --*/
+body header,body section, body footer{
+    background-color: lightcoral;
+    height: 400px;
+}
+
+header div#carouselExampleCaptions div.carousel-inner.h-100vh{
+    height: 100vh;
+}
+
+/*header div#carouselExampleCaptions div.carousel-inner div.carousel-item{
+    transition: transform 1s ease-in-out,-webkit-transform .5s ease-in-out !important;
+}*/
+
+header div#carouselExampleCaptions div.carousel-inner div.carousel-item img::before{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+header div#carouselExampleCaptions div.carousel-inner div.carousel-item #uno{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 97.3vw;
+}
+
+header div#carouselExampleCaptions div.carousel-inner div.carousel-item div.carousel-caption{
+    height: 100%;
+    position: initial;
+}
+
+/*
+<div class="vw-100 vh-100 asImg"></div>
+            <article id="parrafoHeader" class="">
+                <h1 class="display-4">Destinos</h1>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0"><cite title="Source Title">Un viaje de mil millas comienza con el primer paso.</cite></p>
+                    <footer class="blockquote-footer">Lao-Tse</footer>
+                </blockquote>
+            </article>
+            <div id="firstMsg" class="vw-100"></div>
+*/
+
+/*-- Media --*/
+@media screen and (max-width:991.98px){
+    /*-- NAV --*/
+    .expansibleNav-collapse
+    {
+        position: fixed;
+        top:56px;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        visibility: hidden;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        transition: transform .2s ease-in-out, visibility .2s ease-in-out;
+        transition: transform .2s ease-in-out, visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+
+    .expansibleNav-collapse.expandNav
+    {
+        visibility: visible;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    /*-- NAV --*/
+}
