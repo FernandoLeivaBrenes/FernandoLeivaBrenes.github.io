@@ -126,10 +126,13 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     }
     header div#carouselMenu div.carousel-inner div.carousel-item div#Inscribirse{
         position: relative !important;
-        background-color: #fff;
         width: 100% !important;
     }
     header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
-        background-attachment: scroll;
+        position: relative;
+        background-image: url("/images/camara.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: center;
     }
 }
