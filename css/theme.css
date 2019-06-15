@@ -123,10 +123,12 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         position: relative !important;
         background-color: #2572ed;
         width: 100% !important;
+        background-attachment: scroll;
     }
     header div#carouselMenu div.carousel-inner div.carousel-item div#Inscribirse{
         position: relative !important;
         background-color: #fff;
-        width: 100%;
+        width: 100% !important;
+        background-attachment: scroll;
     }
 }
