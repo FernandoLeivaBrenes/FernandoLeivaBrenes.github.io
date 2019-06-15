@@ -128,11 +128,15 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         position: relative !important;
         width: 100% !important;
     }
-    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
-        position: relative;
+    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1::before{
+        position: fixed;
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
         background-image: url("/images/camara.png");
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: center;
+        background-size: cover;
+        background-attachment: center center;
     }
 }
