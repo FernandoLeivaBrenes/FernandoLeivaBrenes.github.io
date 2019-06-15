@@ -1,21 +1,64 @@
 /*-- BODY --*/
-body{
-    position: relative;
-    background-color: #0646ad;
+*{
+    font-family: 'Lato', sans-serif;
+}
+.Llamativo{
+    color: #210199;
+    text-decoration: none;
+    font-size: calc(2px + 1em);
+    font-weight: bold;
 }
 /*-- BODY --*/
 body header,body section, body footer{
-    background-color: lightcoral;
+    background-color: white;
     height: 400px;
 }
-
-header div#carouselExampleCaptions div.carousel-inner.h-100vh div.carousel-item{
+/*-- HEADER --*/
+header div#carouselMenu div.carousel-inner.h-100vh div.carousel-item{
     height: 100vh;
 }
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
+    position: absolute;
+    background-image: url("/images/camara.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
+    background-color: #2572ed;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    filter: invert(25%);
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
+    color: darkblue;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div#Inscribirse{
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    filter: invert(25%);
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
 
-/*header div#carouselExampleCaptions div.carousel-inner div.carousel-item{
-    transition: transform 1s ease-in-out,-webkit-transform .5s ease-in-out !important;
-}*/
+/*-- HEADER --*/
+/*-- NAV --*/
+nav a.navbar-brand span{
+    font-family: 'Loved by the King', cursive;
+    font-size: 1.7em
+}
+/*-- NAV --*/
 
 header div#carouselExampleCaptions div.carousel-inner div.carousel-item img::before{
     height: 100vh;
@@ -23,19 +66,13 @@ header div#carouselExampleCaptions div.carousel-inner div.carousel-item img::bef
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-header div#carouselExampleCaptions div.carousel-inner div.carousel-item #uno{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+
+
+header div#carouselMenu div.carousel-inner div.carousel-item > div{
+  background-color: lightgray;
 }
 
-header div#carouselExampleCaptions div.carousel-inner div.carousel-item div{
-  background-color: blueviolet;
-}
-
-header div#carouselExampleCaptions div.carousel-inner div.carousel-item div.carousel-caption{
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption{
     height: 100%;
     position: initial;
 }
@@ -80,4 +117,16 @@ header div#carouselExampleCaptions div.carousel-inner div.carousel-item div.caro
         transform: translateX(-100%);
     }
     /*-- NAV --*/
+}
+@media screen and (max-width:600px){
+    header div#carouselMenu div.carousel-inner div.carousel-item div.textoSobreAzul{
+        position: relative !important;
+        background-color: #2572ed;
+        width: 100% !important;
+    }
+    header div#carouselMenu div.carousel-inner div.carousel-item div#Inscribirse{
+        position: relative !important;
+        background-color: #fff;
+        width: 100%;
+    }
 }
