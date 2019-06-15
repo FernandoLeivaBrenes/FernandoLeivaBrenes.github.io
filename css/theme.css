@@ -124,6 +124,6 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         background-image: url("/images/camara.png");
         background-repeat: no-repeat;
         background-size: contain;
-        background-attachment: center;
+        background-position: center;
     }
 }
