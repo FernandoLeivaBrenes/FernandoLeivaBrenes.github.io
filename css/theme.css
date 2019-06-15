@@ -60,13 +60,6 @@ nav a.navbar-brand span{
 }
 /*-- NAV --*/
 
-header div#carouselExampleCaptions div.carousel-inner div.carousel-item img::before{
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-
-
 
 header div#carouselMenu div.carousel-inner div.carousel-item > div{
   background-color: lightgray;
@@ -76,18 +69,6 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     height: 100%;
     position: initial;
 }
-
-/*
-<div class="vw-100 vh-100 asImg"></div>
-            <article id="parrafoHeader" class="">
-                <h1 class="display-4">Destinos</h1>
-                <blockquote class="blockquote text-center">
-                    <p class="mb-0"><cite title="Source Title">Un viaje de mil millas comienza con el primer paso.</cite></p>
-                    <footer class="blockquote-footer">Lao-Tse</footer>
-                </blockquote>
-            </article>
-            <div id="firstMsg" class="vw-100"></div>
-*/
 
 /*-- Media --*/
 @media screen and (max-width:991.98px){
@@ -128,15 +109,21 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         position: relative !important;
         width: 100% !important;
     }
+    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
+        background-image: none;
+    }
     header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1::before{
+        content: "";
         position: fixed;
         display: block;
+        top: 0;
+        left: 0;
         height: 100%;
         width: 100%;
         z-index: -10;
         background-image: url("/images/camara.png");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: center center;
+        background-size: contain;
+        background-attachment: center;
     }
 }
