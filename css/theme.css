@@ -31,7 +31,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     height: 50%;
     top: 0;
     left: 0;
-    filter: invert(25%);
+    filter: invert(20%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
     color: darkblue;
@@ -42,7 +42,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     height: 50%;
     bottom: 0;
     right: 0;
-    filter: invert(25%);
+    filter: invert(20%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
     position: absolute;
