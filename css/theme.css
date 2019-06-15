@@ -3,7 +3,7 @@
     font-family: 'Lato', sans-serif;
 }
 .Llamativo{
-    color: #210199;
+    color: rgba(241, 198, 7, 0.911);
     text-decoration: none;
     font-size: calc(2px + 1em);
     font-weight: bold;
@@ -24,6 +24,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
+    filter: invert(15%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
     background-color: #2572ed;
@@ -31,9 +32,8 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     height: 50%;
     top: 0;
     left: 0;
-    filter: invert(20%);
 }
-header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul > *{
     color: darkblue;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div#Inscribirse{
@@ -42,7 +42,6 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     height: 50%;
     bottom: 0;
     right: 0;
-    filter: invert(20%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
     position: absolute;
@@ -54,9 +53,18 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
 
 /*-- HEADER --*/
 /*-- NAV --*/
-nav a.navbar-brand span{
+nav{
+    padding: 0;
+    background-color: lightgrey;
+}
+nav * > *{
     font-family: 'Loved by the King', cursive;
-    font-size: 1.7em
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 400;
+}
+nav .navbar-brand > *{
+    font-size: 1.9em;
 }
 /*-- NAV --*/
 
@@ -76,7 +84,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     .expansibleNav-collapse
     {
         position: fixed;
-        top:56px;
+        top:82px;
         bottom: 0;
         left: 100%;
         width: 100%;
@@ -85,7 +93,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         overflow-y: auto;
         overflow-x: hidden;
         visibility: hidden;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(211, 211, 211, .8);
         transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
         transition: transform .2s ease-in-out, visibility .2s ease-in-out;
         transition: transform .2s ease-in-out, visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
@@ -100,6 +108,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     /*-- NAV --*/
 }
 @media screen and (max-width:600px){
+    /*-- HEADER --*/
     header div#carouselMenu div.carousel-inner div.carousel-item div.textoSobreAzul{
         position: relative !important;
         background-color: #2572ed;
@@ -120,10 +129,16 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
         left: 0;
         height: 100%;
         width: 100%;
-        z-index: -10;
+        z-index: 1;
         background-image: url("/images/camara.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
     }
+    /*-- HEADER --*/
+    /*-- NAV --*/
+    nav .navbar-brand > *{
+        font-size: 1.5em;
+    }
+    /*-- NAV --*/
 }
