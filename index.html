@@ -18,6 +18,36 @@
     <title>FotoDestinos</title>
 </head>
 <body data-spy="scroll" data-target="#navigationUnit" data-offset="0" class="container-fluid">
+
+        <nav id="navigationBar" class="navbar-dark bg-dark navbar fixed-top navbar-expand-lg d-flex align-content-center ">
+            <a class="navbar-brand mr-auto mr-lg-0 " href="">
+                <img src="images/WTicon.png" width="30" height="32" alt="">
+                <span class="align-middle "> FotoDestinos</span>
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="expandNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--list of links-->
+            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex justify-content-center">
+                <ul class="navbar-nav mx-3 nav-pills justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#headerContainer">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sliderSect">Slider Section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jumbotron_CardsDeck">Cards Deck</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mappingZone">Videos and Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linksAndFun">Links & Fun</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
     
         <header id="headerContainer" class="row h-auto">
             <div id="carouselMenu" class="carousel slide w-100" data-ride="carousel" data-interval="200000" data-keyboard="true" data-pause="hover">
@@ -41,8 +71,8 @@
                         <div class="carousel-caption container-fluid d-flex flex-wrap align-content-center">
                             <div class="anuncio2 col textoSobreAzul h-100">
                                 <div class="textocentrado">
-                                    <h3>¡Comienzan las vacaciones!</h3>
-                                    <p>Y con ellas ...</p>
+                                    <h3 class="titulo">¡Comienzan las vacaciones!</h3>
+                                    <p class="subtitulo">Y con ellas ...</p>
                                     <p>Nuestros talleres de verano !!</p>
                                 </div>
 
@@ -81,35 +111,6 @@
                 </a>
             </div>
         </header>
-        <nav id="navigationBar" class="navbar-dark bg-dark navbar fixed-top navbar-expand-lg d-flex align-content-center">
-            <a class="navbar-brand mr-auto mr-lg-0 " href="">
-                <img src="images/WTicon.png" width="30" height="32" alt="">
-                <span class="align-middle "> FotoDestinos</span>
-            </a>
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="expandNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--list of links-->
-            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark">
-                <ul class="navbar-nav mx-3 nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#headerContainer">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sliderSect">Slider Section</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#jumbotron_CardsDeck">Cards Deck</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mappingZone">Videos and Maps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#linksAndFun">Links & Fun</a>
-                    </li>
-                </ul>
-            </nav>
-        </nav>
 
         <div>
             <section id="jumbotron_CardsDeck"></section>

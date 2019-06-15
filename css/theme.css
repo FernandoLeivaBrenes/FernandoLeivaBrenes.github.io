@@ -75,7 +75,7 @@ nav * > *{
     font-weight: 400;
 }
 nav .navbar-brand > *{
-    font-size: 1.9em;
+    font-size: 1.2em;
 }
 nav button.navbar-toggler span{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2, 252, 2, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
@@ -98,7 +98,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     .expansibleNav-collapse
     {
         position: fixed;
-        top:72px;
+        top:60px;
         bottom: 0;
         left: 100%;
         width: 100%;
