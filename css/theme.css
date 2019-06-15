@@ -27,8 +27,12 @@ header div#carouselExampleCaptions div.carousel-inner div.carousel-item #uno{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 97.3vw;
+    height: 100%;
+    width: 100%;
+}
+
+header div#carouselExampleCaptions div.carousel-inner div.carousel-item div{
+  background-color: blueviolet;
 }
 
 header div#carouselExampleCaptions div.carousel-inner div.carousel-item div.carousel-caption{
