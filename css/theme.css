@@ -130,7 +130,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     .expansibleNav-collapse
     {
         position: fixed;
-        top:60px;
+        top: 45px;
         bottom: 0;
         left: 100%;
         width: 100%;
