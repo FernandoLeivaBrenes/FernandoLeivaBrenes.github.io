@@ -1,6 +1,10 @@
 /*-- BODY --*/
 *{
     font-family: 'Lato', sans-serif;
+    --Enum_color: rgba(5, 217, 105, 0.9);
+}
+body{
+    background-color: white;
 }
 .Llamativo{
     color: rgba(241, 198, 7, 0.911);
@@ -14,13 +18,16 @@
     font-size: calc(2px + 1em);
 }
 /*-- BODY --*/
-body header,body section, body footer{
-    background-color: white;
-    height: 400px;
-}
 /*-- HEADER --*/
+header div#carouselMenu div.carousel-inner{
+    border-radius: 12px;
+}
 header div#carouselMenu div.carousel-inner.h-100vh div.carousel-item{
     height: 100vh;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption{
+    height: 100%;
+    position: initial;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
     /*position: absolute;*/
@@ -42,7 +49,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60%;
+    background-size: 50%;
     filter: invert(15%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1:first-child::before {
@@ -62,6 +69,9 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul > *{
     color: darkblue;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
+    color: red;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div#Inscribirse{
     font-size: 1.5em;
@@ -87,7 +97,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
 header div#carouselMenu div.carousel-inner div.carousel-item div.anuncio2{
     height: 100%;
     width: 100%;
-    background-image:  url(/images/verano.png), linear-gradient(30deg, white, lightblue) !important;
+    background-image:  url("/images/verano.png"), linear-gradient(30deg, white, lightblue) !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom center;
@@ -104,41 +114,48 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.anuncio2::befor
     left: 0;
     background-color: rgba(240, 240, 240, .35);
 }
-
 /*-- HEADER --*/
 /*-- NAV --*/
 nav{
     padding: 0;
     background-color: lightgrey;
 }
-nav *>*{
+nav *{
     font-family: 'Loved by the King', cursive;
     font-size: 1.2em;
     text-align: center;
     font-weight: 400;
+    color: var(--Enum_color);
 }
-nav .navbar-brand > *{
+nav .navbar-brand *{
     font-size: 1.2em;
     margin-left: 10px;
+}
+nav .nav-link{
+    color: var(--Enum_color) !important;
+    font-size: 1em;
+}
+nav .nav-link.active{
+    background-color: transparent !important;
+    border: 2px solid currentColor;
+    color: var(--Enum_color) !important;
+}
+nav .nav-link:hover, nav .nav-link.active:hover{
+    background-color: var(--Enum_color) !important;
+    color: white !important;
 }
 nav button.navbar-toggler span{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2, 252, 2, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
+
 /*-- NAV --*/
-
-/*
-header div#carouselMenu div.carousel-inner div.carousel-item > div{
-  background-color: red;
-}
-header div#carouselMenu div.carousel-inner div.carousel-item > div > div{
-    background-color: yellow;
-}*/
-
-header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption{
-    height: 100%;
-    position: initial;
+/*-- SECTION : CURSOLIST --*/
+section#cursosList div h2.tipo_curso{
+    margin: 1em 0 1em 0;
+    color: var(--Enum_color);
 }
 
+/*-- SECTION : CURSOLIST --*/
 /*-- Media --*/
 @media screen and (max-width:991.98px){
     /*-- NAV --*/
