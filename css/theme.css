@@ -18,30 +18,48 @@ header div#carouselMenu div.carousel-inner.h-100vh div.carousel-item{
     height: 100vh;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
+    /*position: absolute;*/
+    background-image: url("/images/pageHeaderAnuncio1_1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1::before{
+    content: "";
     position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background-image: url("/images/camara.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 60%;
     filter: invert(15%);
 }
-header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul{
-    background-color: #2572ed;
-    width: 50%;
-    height: 50%;
-    top: 0;
-    left: 0;
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1:first-child::before {
+    background-color: rgba(37, 114, 237, .6);
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1:last-child::before{
+    background-color: rgba(255, 255, 255, .6);
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1_1{
+    /*position: fixed;*/
+    background-image: url("/images/pageHeaderAnuncio1_1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.textoSobreAzul > *{
     color: darkblue;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div#Inscribirse{
-    background-color: #fff;
-    width: 50%;
-    height: 50%;
-    bottom: 0;
-    right: 0;
+    background-color: rgba(255, 255, 255, .5);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
     position: absolute;
@@ -61,6 +79,16 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.anuncio2{
     background-size: contain;
     z-index: 1;
 }
+header div#carouselMenu div.carousel-inner div.carousel-item div.anuncio2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 240, 240, .35);
+}
 
 /*-- HEADER --*/
 /*-- NAV --*/
@@ -70,22 +98,26 @@ nav{
 }
 nav * > *{
     font-family: 'Loved by the King', cursive;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
     font-weight: 400;
 }
 nav .navbar-brand > *{
     font-size: 1.2em;
+    margin-left: 10px;
 }
 nav button.navbar-toggler span{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2, 252, 2, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 /*-- NAV --*/
 
-
+/*
 header div#carouselMenu div.carousel-inner div.carousel-item > div{
-  background-color: lightgray;
+  background-color: red;
 }
+header div#carouselMenu div.carousel-inner div.carousel-item > div > div{
+    background-color: yellow;
+}*/
 
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption{
     height: 100%;
@@ -125,11 +157,12 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     header div#carouselMenu div.carousel-inner div.carousel-item div.textoSobreAzul{
         position: relative !important;
         background-color: #2572ed;
-        width: 100% !important;
     }
     header div#carouselMenu div.carousel-inner div.carousel-item div#Inscribirse{
         position: relative !important;
-        width: 100% !important;
+    }
+    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.col{
+        display: none;
     }
     header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
         position: fixed;

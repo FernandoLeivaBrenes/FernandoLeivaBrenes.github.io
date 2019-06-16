@@ -19,17 +19,17 @@
 </head>
 <body data-spy="scroll" data-target="#navigationUnit" data-offset="0" class="container-fluid">
 
-        <nav id="navigationBar" class="navbar-dark bg-dark navbar fixed-top navbar-expand-lg d-flex align-content-center ">
+        <nav id="navigationBar" class="navbar-dark bg-dark navbar fixed-top navbar-expand-lg d-flex align-middle">
             <a class="navbar-brand mr-auto mr-lg-0 " href="">
                 <img src="images/WTicon.png" width="30" height="32" alt="">
-                <span class="align-middle "> FotoDestinos</span>
+                <span class="align-middle ">FotoDestinos</span>
             </a>
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="expandNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--list of links-->
             <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex justify-content-center">
-                <ul class="navbar-nav mx-3 nav-pills justify-content-between">
+                <ul class="navbar-nav mx-3 nav-pills ">
                     <li class="nav-item">
                         <a class="nav-link active" href="#headerContainer">Inicio</a>
                     </li>
@@ -49,18 +49,20 @@
             </nav>
         </nav>
     
-        <header id="headerContainer" class="row h-auto">
+        <header id="headerContainer" class="row">
             <div id="carouselMenu" class="carousel slide w-100" data-ride="carousel" data-interval="200000" data-keyboard="true" data-pause="hover">
-                <div class="carousel-inner h-100vh">
+                <div class="carousel-inner h-100vh container-fluid">
                     <div class="carousel-item active">
-                        <div class="carousel-caption container-fluid d-flex flex-wrap align-content-center">
-                                <div class="anuncio1 col-md-12 textoSobreAzul">
+                        <div class="carousel-caption row p-0">
+                                <div class="anuncio1 col-sm-6 textoSobreAzul">
                                     <div class="textocentrado">
                                         <h5>¿Quieres aprender a tomar buenas fotos?</h5>
                                         <p>¡Pues apuntate <a href="#" class="Llamativo">YA</a> a nuestros cursos de fotografía!</p>
                                     </div>
                                 </div>
-                                <div id="Inscribirse" class="anuncio1 col-sm-12">
+                                <div class="col col-sm-6 anuncio1_1"></div>
+                                <div class="col col-sm-6 anuncio1_1"></div>
+                                <div id="Inscribirse" class="anuncio1 col-sm-6">
                                     <div class="textocentrado text-wrap badge badge-primary">
                                         Inscríbete <span class="Llamativo">YA</span> en nuestros cursos
                                     </div>
@@ -68,8 +70,8 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel-caption container-fluid d-flex flex-wrap align-content-center">
-                            <div class="anuncio2 col textoSobreAzul h-100">
+                        <div class="carousel-caption row p-0">
+                            <div class="anuncio2 col textoSobreAzul">
                                 <div class="textocentrado">
                                     <h3 class="titulo">¡Comienzan las vacaciones!</h3>
                                     <p class="subtitulo">Y con ellas ...</p>
