@@ -167,7 +167,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     }
     /*-- NAV --*/
 }
-@media screen and (max-width:600px),(orientation: landscape) {
+@media screen and (max-width:600px),(max-width:600px, orientation: landscape) {
     /*-- HEADER --*/
     header div#carouselMenu div.carousel-inner div.carousel-item div.textoSobreAzul{
         position: relative !important;
