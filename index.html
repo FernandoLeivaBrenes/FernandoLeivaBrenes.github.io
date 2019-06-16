@@ -19,7 +19,7 @@
 </head>
 <body data-spy="scroll" data-target="#navigationUnit" data-offset="0" class="container-fluid">
 
-        <nav id="navigationBar" class="pt-0 pb-0 navbar-dark bg-dark navbar fixed-top navbar-expand-lg ">
+        <nav id="navigationBar" class="pt-0 pb-0 nav navbar-dark bg-dark navbar fixed-top navbar-expand-lg ">
             <a class="navbar-brand mr-auto mr-lg-0 " href="">
                 <img src="images/WTicon.png" width="30" height="32" alt="">
                 <span class="align-middle ">FotoDestinos</span>
@@ -28,22 +28,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--list of links-->
-            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex justify-content-around">
-                <ul class="navbar-nav nav-pills ">
+            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark justify-content-center">
+                <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link active" href="#headerContainer">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" href="#cursosList" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Cursos
-                            </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="nav-link dropdown-item" href="#cursosBasicos" type="button">Básicos</button>
-                            <button class="nav-link dropdown-item" href="#cursosIntermedios" type="button">Intermedios</button>
+                    <li class="nav-item dropdown" >
+                        <a id="dropdown1" href="#cursosList" class="nav-link active dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Cursos</a>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" href="#cursosBasicos" type="button">Básicos</button>
+                            <button class="dropdown-item" href="#cursosIntermedios" type="button">Intermedios</button>
                             <button class="nav-link dropdown-item" href="#cursosEspecificos" type="button">cursosEspecificos</button>
                             <button class="nav-link dropdown-item" href="#cursosAmedida" type="button">Personalizados</button>
                         </div>
-                        <a class="nav-link cla" href="">Slider Section</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#jumbotron_CardsDeck">Cards Deck</a>

@@ -175,9 +175,13 @@ section#cursosList div h2.tipo_curso{
         transition: transform .2s ease-in-out, visibility .2s ease-in-out;
         transition: transform .2s ease-in-out, visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
     }
-
-    .expansibleNav-collapse.expandNav
-    {
+    .redclass{
+        background-color: red;
+    }
+    .expansibleNav-collapse{
+        @extend .redclass;
+    }
+    .expansibleNav-collapse.expandNav{
         visibility: visible;
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
