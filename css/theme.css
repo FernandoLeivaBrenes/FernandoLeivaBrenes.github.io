@@ -6,7 +6,12 @@
     color: rgba(241, 198, 7, 0.911);
     text-decoration: none;
     font-size: calc(2px + 1em);
-    font-weight: bold;
+}
+.Llamativo:hover{
+    color: rgba(241, 198, 7, 0.911);
+    text-shadow: 0 0 2px rgba(255, 255, 255, .5);
+    text-decoration: none;
+    font-size: calc(2px + 1em);
 }
 /*-- BODY --*/
 body header,body section, body footer{
@@ -59,16 +64,26 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     color: darkblue;
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div#Inscribirse{
+    font-size: 1.5em;
     background-color: rgba(255, 255, 255, .5);
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div .badge.badge-dark{
+    background-color: rgba(52, 58, 64, .9);
+    border-bottom: 4px solid rgba(80, 90, 100, 1);
+    border-right: 4px solid rgba(80, 90, 100, 1);
+    padding: 1em;
+}
+header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div .badge.badge-dark:hover{
+    background-color: rgba(80, 90, 100, 1);
+    border-bottom: 4px solid rgba(52, 58, 64, 1);
+    border-right: 4px solid rgba(52, 58, 64, 1);
 }
 header div#carouselMenu div.carousel-inner div.carousel-item div.textocentrado{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
 }
-
 header div#carouselMenu div.carousel-inner div.carousel-item div.anuncio2{
     height: 100%;
     width: 100%;
@@ -167,10 +182,12 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1{
         position: fixed;
         background-image: url("/images/pageHeaderAnuncio1_1.jpg");
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
     }
+    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1::before{
+        background-image: none;
+    }
+
     /*-- HEADER --*/
     /*-- NAV --*/
     /*-- NAV --*/
