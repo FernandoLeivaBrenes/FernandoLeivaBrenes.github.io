@@ -111,7 +111,7 @@ nav{
     padding: 0;
     background-color: lightgrey;
 }
-nav * > *{
+nav *>*{
     font-family: 'Loved by the King', cursive;
     font-size: 1.2em;
     text-align: center;
@@ -167,7 +167,7 @@ header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-captio
     }
     /*-- NAV --*/
 }
-@media screen and (max-width:600px),(max-width:900px) and (orientation: landscape) {
+@media screen and (max-width:600px), (min-width:1100px) and (orientation: landscape) {
     /*-- HEADER --*/
     header div#carouselMenu div.carousel-inner div.carousel-item div.textoSobreAzul{
         position: relative !important;
