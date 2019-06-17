@@ -23,10 +23,6 @@ $(function () {
 
     function checkInputSamePasswd ( idpass1, idpass2 ) {return $(idpass1).val()==$(idpass2).val() && checkInputPasswd(idpass1) ? true : false;}
 
-    $('#aceptarPolitics').on('click', function () {
-        $('#politicasPriv').prop("checked", true);
-    })
-
     function checkInputPolitics ( politicasPriv ) {return $(politicasPriv).is(":checked") ? true : false;}
 
     function enableSubmit (formRegistro) {
@@ -52,6 +48,7 @@ $(function () {
             }
         });
     }
+
     function checkFormIn (idForm) {
         $(idForm + " *").on("change keyup", function() {
             if (checkInput("#email_register", emailPattern) && 
@@ -64,6 +61,10 @@ $(function () {
         });
     }
 
+    $('#aceptarPolitics').on('click', function () {
+        $('#politicasPriv').prop("checked", true);
+        checkFormReg('#formRegistro');
+    })
     checkFormReg('#formRegistro');
     checkFormIn('#form_access');
 
