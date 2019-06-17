@@ -177,16 +177,14 @@
         position: sticky;
         top: 7vh;
         z-index: 1;
-        /*background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 10px white;*/
     }
-    section#cursosList div h1.tipo_curso:nth-child(1){
+    
+    section#cursosList div h1.tipo_curso{
         background-image: linear-gradient(to bottom, red,orange,yellow,lime,blue,indigo,violet);
         background-attachment: fixed;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
-    section#cursosList div h1.tipo_curso:nth-child(2){}
     section#cursosList div h1.tipo_curso:nth-child(3){}
 
 /*-- SECTION : CURSOLIST --*/
@@ -224,6 +222,16 @@
             background-color: rgba(60, 85, 85) !important ;
         }
         /*-- NAV --*/
+        /*-- SECTION : CURSOLIST --*/
+        section#cursosList div h1.tipo_curso{
+            color: var(--principal_color);
+            background-image: none;
+            -webkit-text-fill-color: unset;
+            -webkit-background-clip: unset;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px white;
+        }
+        /*-- SECTION : CURSOLIST --*/
     }
     @media screen and (max-width:600px), (max-height:800px) and (orientation: landscape) {
         /*-- HEADER --*/
