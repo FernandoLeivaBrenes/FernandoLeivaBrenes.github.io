@@ -1,21 +1,16 @@
 /*-- NAV --*/
 $(function () {
-    'use strict'
+
     $('[data-toggle="expandNav"]').on('click', function () {
         $('.expansibleNav-collapse').toggleClass('expandNav');
     })
 
-    $('[data-toggle="dropdown"], .dropdown a').on('click', function () {
-        $('.dropdown-menu').toggleClass('dropdown');
+    $('nav#navigationUnit ul li:not(#dropdownCursosList), nav#navigationUnit ul li#dropdownCursosList div a').on('click', function () {
+        $('.expansibleNav-collapse').removeClass('expandNav');
     })
-
-    $('.navbar-collapse').on('click', function () {
-        $('.dropdown-menu').removeClass('dropdown');
-        $('.expansibleNav-collapse').toggleClass('expandNav');
-    })
-
+    
 })
-
+$('.dropdown-toggle').dropdown();
 $('body').scrollspy({ target: '#navigationUnit' })
 
 

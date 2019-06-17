@@ -18,32 +18,28 @@
 
     <title>FotoDestinos</title>
 </head>
-<body data-spy="scroll" data-target="#navigationUnit" data-offset="65" class="container-fluid">
+<body data-spy="scroll" data-target="#navigationUnit" data-offset="80" class="container-fluid">
 
         <nav id="navigationBar" class="pt-0 pb-0 nav navbar-dark bg-dark navbar fixed-top navbar-expand-lg ">
             <a class="navbar-brand mr-auto mr-lg-0 order-1" href="">
                 <img src="images/WTicon.png" width="30" height="32" alt="">
                 <span class="align-middle ">FotoDestinos</span>
             </a>
-            <div class="nav nav-pills row justify-content-around order-3">
-                    <a class="nav-item nav-link col-auto" href="">
-                            <span class="align-middle "> Registrarse</span>
-                    </a>
-                    <a class="nav-link col-auto" href="">
-                            <span class="align-middle "> Iniciar sesión</span>
-                    </a>
+            <div class="row nav nav-pills d-lg-flex d-none mr-3 order-3">
+                    <a class="nav-item nav-link col-auto align-middle font-weight-bold" href="">Registrarse</a>
+                    <a class="nav-link col-auto iniSesion align-middle font-weight-bold" href="">Iniciar sesión</a>
             </div>
             <button class="navbar-toggler p-0 border-0 order-3" data-toggle="expandNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--list of links-->
             <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex order-2">
-                <ul class="nav navbar-nav nav-pills w-100">
+                <ul class="nav navbar-nav nav-pills justify-content-center w-100">
                     <li class="nav-item mr-sm-3 m-0">
-                        <a class="nav-link active" href="#headerContainer">Inicio</a>
+                        <a class="nav-link active" href="#inicio">Inicio</a>
                     </li>
                     <li id="dropdownCursosList" class="nav-item mr-sm-3 m-0 dropdown" >
-                        <a href="#cursosList" class="nav-link m-0 dropdown-toggle" data-toggle="dropdown">Cursos</a>
+                        <a class="nav-link m-0 dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Cursos</a>
                         <div class="dropdown-menu bg-dark m-0 p-0">
                             <a class="nav-link dropdown-item" href="#cursosBasicos">Básicos</a>
                             <a class="nav-link dropdown-item" href="#cursosIntermedios">Intermedios</a>
@@ -60,11 +56,20 @@
                     <li class="nav-item mr-sm-3 m-0">
                         <a class="nav-link" href="#linksAndFun">About Us</a>
                     </li>
+                    <li class="d-lg-none m-0 p-0">
+                        <div class="separator"></div>
+                    </li>
+                    <li class="nav-item mr-sm-3 m-0 d-lg-none">
+                        <a class="nav-link font-weight-bold" href="">Registrarse</a>
+                    </li>
+                    <li class="nav-item mr-sm-3 m-0 d-lg-none">
+                        <a class="nav-link font-weight-bold iniSesion" href="">Iniciar sesión</a>
+                    </li>
                 </ul>
             </nav>
         </nav>
     
-        <header id="headerContainer" class="row h-100">
+        <header id="inicio" class="row h-100">
             <div id="carouselMenu" class="carousel slide w-100" data-ride="carousel" data-interval="200000" data-keyboard="true" data-pause="hover">
                 <div class="carousel-inner h-100vh container-fluid">
                     <div class="carousel-item active">
@@ -135,7 +140,7 @@
         <div class="container mw-80">
             <section id="cursosList" class="row p-0">
                 <div class="col">
-                    <h2 id="cursosBasicos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Básicos</h2>
+                    <h1 id="cursosBasicos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Básicos</h1>
                     <p class="text-justify">Nuestros cursos básicos de fotografía representan el primer paso dentro de nuestro itinerario formativo y no requieren conocimientos previos de fotografía. Con más de veinte años de experiencia en nuestros cursos básicos consideramos que nuestro programa es el más adecuado para aprender el manejo en manual de la cámara fotográfica y entender los conceptos básicos de la técnica fotográfica.</p>
                     <div class="row">
                         <div class="col-sm-auto">
@@ -147,7 +152,7 @@
                     </div>
                 </div>
                 <div class="col-md-auto">
-                    <h2 id="cursosIntermedios" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Intermedios</h2>
+                    <h1 id="cursosIntermedios" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Intermedios</h1>
                     <p class="text-justify">Estos curso requieren conocimientos básicos de fotografía y están orientados para los alumnos que hayan realizado el curso básico de fotografía o tengan conocimientos equivalentes. Seis cursos intermedios para aprender los programas de edición como Adobe Photoshop, Camera RAW y Photoshop Lightroom, profundizar en la técnica de toma fotográfica o iniciarse en el laboratorio clásico en blanco y negro.</p>
                     <div class="row">
                         <div class="col-md-auto">
@@ -158,7 +163,7 @@
                     </div>
                 </div>
                 <div class="col-md-auto">
-                    <h2 id="cursosEspecificos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Específicos</h2>
+                    <h1 id="cursosEspecificos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Específicos</h1>
                     <p class="text-justify">Los cursos específicos requieren un conocimiento medio de fotografía y están diseñados para aportar al alumno todos los conocimientos necesarios para perfeccionar una técnica específica dentro del mundo de la fotografía. Comprender el comportamiento de la luz natural y artificial o profundizar en el apasionante mundo de la fotografía documental y creativa.</p>
                     <div class="row">
                         <div class="col-md-auto">
@@ -184,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-auto">
-                    <h2 id="cursosAmedida" class="text-uppercase text-center font-weight-bold tipo_curso">CURSOS A MEDIDA</h2>
+                    <h1 id="cursosAmedida" class="text-uppercase text-center font-weight-bold tipo_curso">CURSOS A MEDIDA</h1>
                     <p class="text-justify">Si necesitas una formación personalizada tanto en contenidos como en horarios en la escuela realizamos clases a medida. Diseñamos cursos para empresas que necesiten formar a su equipo o para particulares que requieran de ciertos conocimientos. Tanto si eres un profesional con ganas de actualizarse o resolver dudas, como si eres un aficionado que quiere aprender o buscar formación puntual dentro de algún área fotográfica, en la escuela podemos crear esa formación a medida gracias a nuestro amplio equipo de profesionales.</p>
                     <p class="text-justify">Si deseas información sobre los cursos a medida puedes llamarnos o escribirnos un mail, elaboraremos un programa teórico-práctico para que los conocimientos se asimilen de la mejor manera. La fecha para el comienzo y realización del curso se establece entre el cliente y la escuela una vez definidos los contenidos del programa.</p>
                     <p class="text-justify">Además los cursos dirigidos a trabajadores por cuenta ajena de una empresa son susceptibles de bonificación a través de la Fundación DAW1.</p>
