@@ -148,7 +148,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <form action="mailTo:fernando.leiva.brenes@gmail.com" method="post">
+                        <form id="form_access" action="mailTo:fernando.leiva.brenes@gmail.com" method="post">
                             <div class="modal-body">                            
                                 <div class="form-group">
                                     <label for="email_initsesion">Email address</label>
@@ -160,11 +160,11 @@
                                     <input type="password" class="form-control" id="passwd_initsesion" placeholder="Password">
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                            </div>
                         </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary" form="form_access">Enviar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,8 +178,8 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <form action="mailTo:fernando.leiva.brenes@gmail.com" method="post">
-                            <div class="modal-body">                            
+                        <div class="modal-body">
+                            <form id="formRegistro" action="mailTo:fernando.leiva.brenes@gmail.com" method="post">
                                 <div class="form-row">
                                     <div class="form-group col-12 col-md-6">
                                         <label for="Nombre">Nombre</label>
@@ -191,13 +191,13 @@
                                     </div>
                                     <div class="form-group col-12 col-lg-6">
                                         <div class="from-group col-12">
-                                            <label for="FechaNacimiento">Fecha de nacimiento</label>
+                                            <label for="FechaNacimiento">Fecha de nacimiento*</label>
                                             <input id="FechaNacimiento" type="date" class="form-control" placeholder="Fecha Nacimiento">
                                         </div>
                                         <div class="from-group col-12">
                                             <label for="Provincia">Provincia</label>
                                             <select name="Provincia" id="Provincia" class="custom-select">
-                                                <option selected>Provincia</option>
+                                                <option disabled selected>Seleccionar provincia</option>
                                                 <option value="Almería">Almería</option>
                                                 <option value="Cádiz">Cádiz</option>
                                                 <option value="Córdoba">Córdoba</option>
@@ -215,7 +215,7 @@
                                     <div class="from-group col-12 ">
                                         <label for="email_register">Dirección email</label>
                                         <input type="email" class="form-control" id="email_register" aria-describedby="emailHelp" placeholder="Email">
-                                        <small id="emailHelp" class="form-text text-muted">Su email no se compartirá en ningún momento.</small>
+                                        <small class="form-text text-muted">Su email no se compartirá en ningún momento.</small>
                                     </div>
                                 </div>
                                 <div class="form-row mt-3">
@@ -234,12 +234,13 @@
                                         <label class="custom-control-label" for="politicasPriv">He leído y acepto las <a data-toggle="modal" data-target="#politicasPrivacidad">políticas de privacidad</a></label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                            </div>
-                        </form>
+                                <small class="form-text text-muted">* Los campos son opcionales.</small>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" >Cerrar</button>
+                            <button type="submit" class="btn btn-primary" disabled form="formRegistro">Enviar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,8 +254,8 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">                            
-                                Política de privacidad
+                        <div class="modal-body">
+                                <h1 class="text-primary">Política de privacidad</h1>
                                 A través de este sitio web no se recaban datos de carácter personal de los usuarios sin su conocimiento, ni se ceden a terceros.
                                 
                                 Con la finalidad de ofrecerle el mejor servicio y con el objeto de facilitar el uso, se analizan el número de páginas visitadas, el número de visitas, así como la actividad de los visitantes y su frecuencia de utilización. A estos efectos, la Agencia Española de Protección de Datos (AEPD) utiliza la información estadística elaborada por el Proveedor de Servicios de Internet.
@@ -262,85 +263,89 @@
                                 La AEPD no utiliza cookies para recoger información de los usuarios, ni registra las direcciones IP de acceso. Únicamente se utilizan cookies propias,  de sesión, con finalidad técnica (aquellas que permiten al usuario la navegación a través del sitio web y la utilización de las diferentes opciones y servicios que en ella existen).
                                 
                                 El portal del que es titular la AEPD contiene enlaces a sitios web de terceros, cuyas políticas de privacidad son ajenas a la de la AEPD. Al acceder a tales sitios web usted puede decidir si acepta sus políticas de privacidad y de cookies. Con carácter general, si navega por internet usted puede aceptar o rechazar las cookies de terceros desde las opciones de configuración de su navegador.
+                                <br>
+                                <h1 class="text-primary">Privacidad</h1>
+
+                                Ante todo gastaremos cuidadito de tus datos , espero que confies en nosotros ;D.
+
+                                Curso de 1º de DAW de IES Campanillas , escribiendo Fernando Leiva Brenes. Documento de confidencialidad de esta página , realizada para la materia Lenguajes de Marca cuya profesora de Pilar González <3.
                                 
-                                Información básica sobre protección de datos
+                                <h1 class="text-primary">Información básica sobre protección de datos</h1>
                                 
                                 A continuación le informamos sobre la política de protección de datos de la Agencia Española de Protección de Datos.
-                                
-                                Responsable del tratamiento
+                                <br>
+                                <h3 class="text-warning">Responsable del tratamiento</h3>
                                 
                                 Los datos de carácter personal que se pudieran recabar directamente del interesado serán tratados de forma confidencial y quedarán incorporados a la correspondiente actividad de tratamiento titularidad de  la Agencia Española de Protección de Datos (AEPD).
                                 
                                 La relación actualizada de las actividades de tratamiento que la AEPD lleva a cabo se encuentra disponible en el siguiente enlace al registro de actividades de la AEPD.
-                                
-                                Finalidad
+                                <br>
+                                <h3 class="text-primary">Finalidad</h3>
                                 
                                 La finalidad del tratamiento de los datos corresponde a cada una de las actividades de tratamiento que realiza la AEPD y que están accesibles en el registro de actividades de tratamiento.
-                                
-                                Legitimación
+                                <br>
+                                <h3 class="text-danger">Legitimación</h3>
                                 
                                 El tratamiento de sus datos se realiza para el cumplimiento de obligaciones legales por parte de la AEPD, para el cumplimiento de misiones realizada en interés público o en el ejercicio de poderes públicos conferidos a la AEPD, así como cuando la finalidad del tratamiento requiera su consentimiento, que habrá de ser prestado mediante una clara acción afirmativa.
                                 
                                 Puede consultar la base legal para cada una de las actividades de tratamiento que lleva a cabo la AEPD en  el siguiente enlace al registro de actividades de la AEPD.
-                                
-                                Conservación de datos
+                                <br>
+                                <h3 class="text-primary">Conservación de datos</h3>
                                 
                                 Los datos personales proporcionados se conservarán durante el tiempo necesario para cumplir con la finalidad para la que se recaban y para determinar las posibles responsabilidades que se pudieran derivar de la finalidad, además de los períodos establecidos en la normativa de archivos y documentación.
-                                
-                                Comunicación de datos
+                                <br>
+                                <h3 class="text-primary">Comunicación de datos</h3>
                                 
                                 Con carácter general no se comunicarán los datos personales a terceros, salvo obligación legal, entre las que pueden estar las comunicaciones al Defensor del Pueblo, Jueces y Tribunales, interesados en los procedimientos relacionados con la reclamaciones presentadas.
                                 
                                 Puede consultar los destinatarios para cada una de las actividades de tratamiento que lleva a cabo la AEPD en el siguiente  enlace al registro de actividades de la AEPD.
-                                
-                                Derechos de los interesados
+                                <br>
+                                <h3 class="text-warning">Derechos de los interesados</h3>
                                 
                                 Cualquier persona tiene derecho a obtener confirmación sobre los tratamientos que de sus datos que se llevan a cabo por la AEPD.
                                 
                                 Puede ejercer sus derechos de acceso, rectificación, supresión y portabilidad de sus datos, de limitación y oposición a su tratamiento, así como a no ser objeto de decisiones basadas únicamente en el tratamiento automatizado de sus datos, cuando procedan, ante la Agencia Española de Protección de Datos, C/Jorge Juan, 6, 28001- Madrid o en la dirección de correo electrónico dpd@agpd.es.
-                                
-                                Aviso legal
+                                <br>
+                                <h3 class="text-danger">Aviso legal</h3>
                                 Este portal, cuyo titular es la Agencia Española de Protección de Datos (AEPD), con NIF Q2813014D, domicilio en la calle Jorge Juan, nº6, 28001 Madrid, y teléfono 901 100 099, está constituido por los sitios web asociados a los dominios aepd.es, sedeagpd.gob.es, tudecideseninternet.es y redipd.org.
-                                
-                                Propiedad intelectual e industrial
+                                <br>
+                                <h3 class="text-success">Propiedad intelectual e industrial</h3>
                                 
                                 El diseño del portal y sus códigos fuente, así como los logos, marcas y demás signos distintivos que aparecen en el mismo pertenecen a la AEPD y están protegidos por los correspondientes derechos de propiedad intelectual e industrial.
-                                
-                                Responsabilidad de los contenidos
+                                <br>
+                                <h3 class="text-primary">Responsabilidad de los contenidos</h3>
                                 
                                 La AEPD no se hace responsable de la legalidad de otros sitios web de terceros desde los que pueda accederse al portal. La AEPD tampoco responde por la legalidad de otros sitios web de terceros, que pudieran estar vinculados o enlazados desde este portal.
                                 
                                 La AEPD se reserva el derecho a realizar cambios en el sitio web sin previo aviso, al objeto de mantener actualizada su información, añadiendo, modificando, corrigiendo o eliminando  los contenidos publicados o el diseño del portal.
                                 
                                 La AEPD no será responsable del uso que terceros hagan de la información publicada en el portal, ni tampoco de los daños sufridos o pérdidas económicas que, de forma directa o indirecta, produzcan o puedan producir perjuicios económicos, materiales o sobre datos, provocados por el uso de dicha información.
-                                
-                                Reproducción de contenidos
+                                <br>
+                                <h3 class="text-primary">Reproducción de contenidos</h3>
                                 
                                 Se prohíbe la reproducción total o parcial de los contenidos publicados en el portal. No obstante, los contenidos que sean considerados como datos abiertos en la Sede Electrónica, publicados según lo previsto en el Real Decreto 1495/2011, de 24 de octubre, de desarrollo de la Ley 37/2007, sobre reutilización de la información del sector público, para el ámbito del sector público estatal, podrán ser objeto de reproducción en los términos contenidos en el siguiente Aviso.
-                                
-                                Sede Electrónica
+                                <br>
+                                <h3 class="text-primary">Sede Electrónica</h3>
                                 
                                 De acuerdo con lo establecido por el artículo 7 del Real Decreto 1671/2009, de 6 de noviembre, por el que se desarrolla parcialmente la Ley 11/2007, de 22 de junio, de acceso electrónico de los ciudadanos a los servicios públicos, la AEPD se responsabiliza de la integridad, veracidad y actualización de la información y los servicios a los que pueda accederse a través de su Sede Electrónica ( https://sedeagpd.gob.es/).
-                                
-                                Portal de transparencia
+                                <br>
+                                <h3 class="text-primary">Portal de transparencia</h3>
                                 
                                 A través de la información publicada en el portal de transparencia, la AEPD atiende de forma periódica y actualizada el principio de publicidad activa establecido por la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, con los mecanismos adecuados para facilitar la accesibilidad, la interoperabilidad, la calidad y la reutilización de la información, así como su identificación y localización.
-                                
-                                Ley aplicable
+                                <br>
+                                <h3 class="text-success">Ley aplicable</h3>
                                 
                                 La ley aplicable en caso de disputa o conflicto de interpretación de los términos que conforman este aviso legal, así como cualquier cuestión relacionada con los servicios del presente portal, será la ley española.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Aceptar</button>
+                            <button id="aceptarPolitics" type="submit" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="container mw-80">
+        <section id="contenidoTotal" class="container mw-80">
             <section id="cursosList" class="row p-0">
                 <div class="col">
                     <h1 id="cursosBasicos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Básicos</h1>
@@ -405,10 +410,11 @@
             <section id="Blog" class="row">
                 asdasdasdsad
             </section>
-            <footer id="linksAndFun" class="row">
-                    <a class="text-center"><p class="fa fa-at"></p> Fernando.Leiva.Brenes@gmail.com</a>
-                    <a href="https://github.com/FernandoLeivaBrenes" class="text-right"><p class="fa fa-github"></p> FernandoLeivaBrenes</a>
-            </footer>
         </section>
+
+        <footer id="linksAndFun" class="row">
+                <a class="text-center"><p class="fa fa-at"></p> Fernando.Leiva.Brenes@gmail.com</a>
+                <a href="https://github.com/FernandoLeivaBrenes" class="text-right"><p class="fa fa-github"></p> FernandoLeivaBrenes</a>
+        </footer>
 </body>
 </html>
