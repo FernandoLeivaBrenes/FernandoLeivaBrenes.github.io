@@ -11,7 +11,9 @@ $(function () {
     
 })
 $('.dropdown-toggle').dropdown();
-$('body').scrollspy({ target: '#navigationUnit' })
-
-
+$('body').scrollspy({ target: '#navigationUnit' });
 /*-- NAV --*/
+$('#politicasPriv').prop('indeterminate', true);
+
+
+
