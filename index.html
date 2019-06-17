@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/WTicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/theme.css">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,15 +21,23 @@
 <body data-spy="scroll" data-target="#navigationUnit" data-offset="0" class="container-fluid">
 
         <nav id="navigationBar" class="pt-0 pb-0 nav navbar-dark bg-dark navbar fixed-top navbar-expand-lg ">
-            <a class="navbar-brand mr-auto mr-lg-0 " href="">
+            <a class="navbar-brand mr-auto mr-lg-0 order-1" href="">
                 <img src="images/WTicon.png" width="30" height="32" alt="">
                 <span class="align-middle ">FotoDestinos</span>
             </a>
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="expandNav">
+            <div class="nav nav-pills row justify-content-around order-3">
+                    <a class="nav-item nav-link col-auto" href="">
+                            <span class="align-middle "> Registrarse</span>
+                    </a>
+                    <a class="nav-link col-auto" href="">
+                            <span class="align-middle "> Iniciar sesión</span>
+                    </a>
+            </div>
+            <button class="navbar-toggler p-0 border-0 order-3" data-toggle="expandNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--list of links-->
-            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex justify-content-around">
+            <nav id="navigationUnit" class="navbar-collapse expansibleNav-collapse bg-dark d-flex justify-content-around order-2">
                 <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item mr-sm-3 m-0">
                         <a class="nav-link active" href="#headerContainer">Inicio</a>
@@ -38,28 +47,19 @@
                         <div class="dropdown-menu bg-dark m-0 p-0">
                             <a class="nav-link dropdown-item" href="#cursosBasicos">Básicos</a>
                             <a class="nav-link dropdown-item" href="#cursosIntermedios">Intermedios</a>
-                            <a class="nav-link dropdown-item" href="#cursosEspecificos">cursosEspecificos</a>
+                            <a class="nav-link dropdown-item" href="#cursosEspecificos">Especificos</a>
                             <a class="nav-link dropdown-item" href="#cursosAmedida">Personalizados</a>
                         </div>
                     </li>
                     <li class="nav-item mr-sm-3 m-0">
-                        <a class="nav-link" href="#jumbotron_CardsDeck">Cards Deck</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item mr-sm-3 m-0">
-                        <a class="nav-link" href="#mappingZone">Videos and Maps</a>
+                        <a class="nav-link" href="#Blog">Blog</a>
                     </li>
                     <li class="nav-item mr-sm-3 m-0">
-                        <a class="nav-link" href="#linksAndFun">Links & Fun</a>
+                        <a class="nav-link" href="#linksAndFun">About Us</a>
                     </li>
-                    <li class="nav-item mr-sm-3 m-0">
-                            <a class="nav-link" href="#linksAndFun">Links & Fun</a>
-                    </li>
-                    <li class="nav-item mr-sm-3 m-0">
-                            <a class="nav-link" href="#linksAndFun">Links & Fun</a>
-                    </li>
-                    <li class="nav-item mr-sm-3 m-0">
-                            <a class="nav-link" href="#linksAndFun">Links & Fun</a>
-                    </li>                    
                 </ul>
             </nav>
         </nav>
@@ -134,16 +134,16 @@
 
         <div class="container mw-80">
             <section id="cursosList" class="row p-0">
-                <div class="col-md-auto">
+                <div class="col">
                     <h2 id="cursosBasicos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Básicos</h2>
                     <p class="text-justify">Nuestros cursos básicos de fotografía representan el primer paso dentro de nuestro itinerario formativo y no requieren conocimientos previos de fotografía. Con más de veinte años de experiencia en nuestros cursos básicos consideramos que nuestro programa es el más adecuado para aprender el manejo en manual de la cámara fotográfica y entender los conceptos básicos de la técnica fotográfica.</p>
                     <div class="row">
-                        <div class="col-md-auto">
+                        <div class="col-sm-auto">
                             <h4>INICIACIÓN A LA FOTOGRAFÍA</h4>
                             <p>¿Tienes una cámara digital y quieres aprender a sacarle todo el provecho?</p>
                             <p>Este curso te enseña el funcionamiento de la cámara, objetivos y accesorios. Aprende el control del movimiento y la profundidad de campo, a saber utilizar los modos de medición y los sistemas de enfoque. Además de empezar a cuidar el encuadre y la composición, con salidas prácticas en grupo y análisis de las fotos realizadas.</p>
-                            <img src="/images/cursobásico.jpg" alt="" class="h-50 w-50">
                         </div>
+                        <img src="/images/cursobásico.jpg" class="h-50 w-50" alt="foto_curso_basico" >
                     </div>
                 </div>
                 <div class="col-md-auto">
@@ -191,8 +191,15 @@
                     <p class="text-justify">Contacta con nosotros para más información.</p>
                 </div>
             </section>
-            <footer id="linksAndFun">
-
+            <section id="proyectos" class="row">
+                adjsdajhdsa
+            </section>
+            <section id="Blog" class="row">
+                asdasdasdsad
+            </section>
+            <footer id="linksAndFun" class="row">
+                    <a class="text-center"><p class="fa fa-at"></p> Fernando.Leiva.Brenes@gmail.com</a>
+                    <a href="https://github.com/FernandoLeivaBrenes" class="text-right"><p class="fa fa-github"></p> FernandoLeivaBrenes</a>
             </footer>
         </div>
 </body>
