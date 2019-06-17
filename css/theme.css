@@ -59,8 +59,7 @@
         background-color: var(--principal_color);
         opacity: .3;
     }
-    header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1:first-child::before {
-    }
+    
     header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1:last-child::before{
         filter: invert(80%);
     }
@@ -171,21 +170,29 @@
         border-radius: 50%;
     }
 /*-- NAV --*/
+/*-- MODALES --*/
+#modales .modal-header .close{
+    margin-left: 0 !important;
+}
+#modales .modal-header .modal-title{
+    font-family: 'Loved by the King', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+/*-- MODALES --*/
 /*-- SECTION : CURSOLIST --*/
     section#cursosList div h1.tipo_curso{
         margin: 1em 0 1em 0;
         position: sticky;
         top: 7vh;
         z-index: 1;
-    }
-    
-    section#cursosList div h1.tipo_curso{
         background-image: linear-gradient(to bottom, red,orange,yellow,lime,blue,indigo,violet);
         background-attachment: fixed;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
     }
-    section#cursosList div h1.tipo_curso:nth-child(3){}
 
 /*-- SECTION : CURSOLIST --*/
 /*-- Media --*/
@@ -227,6 +234,7 @@
             color: var(--principal_color);
             background-image: none;
             -webkit-text-fill-color: unset;
+            background-clip: none;
             -webkit-background-clip: unset;
             background-color: rgba(255, 255, 255, 0.5);
             box-shadow: 0 0 10px white;
