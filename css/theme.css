@@ -153,13 +153,18 @@
         display: block;
         text-align: center;
         font-size: inherit;
-        margin: -10px;
+        top: 60px;
     }
 /*-- NAV --*/
 /*-- SECTION : CURSOLIST --*/
     section#cursosList div h2.tipo_curso{
         margin: 1em 0 1em 0;
         color: var(--principal_color);
+        position: sticky;
+        top: 60px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, .8);
+        box-shadow: 0 0 10px white;
     }
 
 /*-- SECTION : CURSOLIST --*/
@@ -188,7 +193,14 @@
             transform: translateX(-100%);
         }
         nav #dropdownCursosList div.dropdown-menu.dropdown{
-            position: relative;
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            top: 60px;
+            width: 100%;
+        }
+        nav #dropdownCursosList div.dropdown-menu.dropdown .nav-link{
+            background-color: #455;
         }
         /*-- NAV --*/
     }
