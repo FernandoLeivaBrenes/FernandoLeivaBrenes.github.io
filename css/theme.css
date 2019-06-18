@@ -223,7 +223,7 @@
 }
 /*-- MODALES --*/
 /*-- SECTION : CURSOLIST --*/
-    section#cursosList div h1.tipo_curso{
+    section#cursosList div h1.tipo_curso, .titulo_espaciador{
         margin: 1em 0 1em 0;
         position: sticky;
         top: 7vh;
@@ -254,15 +254,12 @@
 
 /*-- SECTION : CURSOLIST --*/
 #espaciador{
-    position: sticky;
-    display: block;
-    height: 1px;
+   
 }
 /*-- SECTION : proyectos --*/
 #proyectos{
     border-radius: 12px;
     margin: 0;
-    background-color: blue;
 }
 #proyectos .carousel-inner{
     border-radius: 12px;
@@ -289,7 +286,7 @@
     transform: translate(-50%, -50%);
 }
 
-#proyectos .carousel-item.img-green{
+#proyectos div .img-green{
     background-image: url("../images/green.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -302,7 +299,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#proyectos .carousel-item.img-blue{
+#proyectos div .img-blue{
     background-image: url("../images/blue.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -315,7 +312,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#proyectos .carousel-item.img-red{
+#proyectos div .img-red{
     background-image: url("../images/red.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -328,7 +325,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#proyectos .carousel-item.img-black{
+#proyectos div .img-black{
     background-image: url("../images/black.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -397,7 +394,7 @@
         }
         /*-- NAV --*/
         /*-- SECTION : CURSOLIST --*/
-        section#cursosList div h1.tipo_curso{
+        section#cursosList div h1.tipo_curso, .titulo_espaciador{
             color: var(--principal_color);
             background-image: none;
             -webkit-text-fill-color: unset;
