@@ -405,6 +405,9 @@
         section#cursosList div img{
             width: 80% !important;
         }
+        #cursosList * {
+            display: block;
+        }
         /*-- SECTION : CURSOLIST --*/
     }
     @media screen and (max-width:600px), (max-height:800px) and (orientation: landscape) {
