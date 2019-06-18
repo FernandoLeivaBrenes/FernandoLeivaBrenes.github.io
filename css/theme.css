@@ -405,9 +405,6 @@
         section#cursosList div img{
             width: 80% !important;
         }
-        #cursosList * {
-            display: block;
-        }
         /*-- SECTION : CURSOLIST --*/
     }
     @media screen and (max-width:600px), (max-height:800px) and (orientation: landscape) {
@@ -430,7 +427,9 @@
         header div#carouselMenu div.carousel-inner div.carousel-item div.carousel-caption div.anuncio1::before{
             background-image: none;
         }
-
+        #cursosList * {
+            display: block;
+        }
     /*-- HEADER --*/
     /*-- NAV --*/
     /*-- NAV --*/
