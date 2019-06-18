@@ -13,13 +13,11 @@
     .Llamativo{
         color: rgba(241, 198, 7, 0.911);
         text-decoration: none;
-        font-size: calc(2px + 1em);
     }
     .Llamativo:hover{
         color: rgba(241, 198, 7, 0.911);
         text-shadow: 0 0 2px rgba(255, 255, 255, .5);
         text-decoration: none;
-        font-size: calc(2px + 1em);
     }
     .noselect {
         -webkit-touch-callout: none;
@@ -225,7 +223,7 @@
 /*-- SECTION : CURSOLIST --*/
     section#cursosList div h1.tipo_curso, .titulo_espaciador{
         margin: 1em 0 1em 0;
-        position: sticky;
+        position: static;
         top: 7vh;
         z-index: 1;
         background-image: linear-gradient(to bottom, red,orange,yellow,lime,blue,indigo,violet);
@@ -284,6 +282,7 @@
     border-radius: 50%;
     box-shadow: 0 0 10px #000;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 #proyectos div .img-green{
