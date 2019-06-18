@@ -74,22 +74,22 @@
                 <div class="carousel-inner h-100vh container-fluid">
                     <div class="carousel-item active">
                         <div class="carousel-caption row p-0">
-                                <div class="anuncio1 col-sm-6 textoSobreAzul">
-                                    <div class="textocentrado d-flex flex-column align-content-around">
-                                        <h5>¿Quieres aprender a tomar buenas fotos?</h5>
-                                        <p>¡Pues apuntate <a href="#" class="Llamativo font-weight-bold">YA</a> a nuestros cursos de fotografía!</p>
-                                        <div class="badge badge-pill badge-dark d-sm-none d-block " data-toggle="modal" data-target="#register">
-                                            <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
-                                        </div>
+                            <div class="anuncio1 col-sm-6 textoSobreAzul">
+                                <div class="textocentrado d-flex flex-column align-content-around">
+                                    <h5>¿Quieres aprender a tomar buenas fotos?</h5>
+                                    <p>¡Pues apuntate <a href="#" class="Llamativo font-weight-bold">YA</a> a nuestros cursos de fotografía!</p>
+                                    <div class="badge badge-pill badge-dark d-sm-none d-block " data-toggle="modal" data-target="#register">
+                                        <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
                                     </div>
                                 </div>
-                                <div class="col col-sm-6 anuncio1_1"></div>
-                                <div class="col col-sm-6 anuncio1_1"></div>
-                                <div id="Inscribirse" class="anuncio1 col-sm-6 d-sm-block d-none">
-                                    <div class="textocentrado text-wrap badge badge-pill badge-dark" data-toggle="modal" data-target="#register">
-                                            <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
-                                    </div>
+                            </div>
+                            <div class="col col-sm-6 anuncio1_1"></div>
+                            <div class="col col-sm-6 anuncio1_1"></div>
+                            <div id="Inscribirse" class="anuncio1 col-sm-6 d-sm-block d-none">
+                                <div class="textocentrado text-wrap badge badge-pill badge-dark" data-toggle="modal" data-target="#register">
+                                        <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
                                 </div>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -105,24 +105,19 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/green.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <div class="carousel-caption row p-0">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p0Flq5_lyvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/red.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/black.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <div class="carousel-caption row p-0">
+                            <div class="anuncio3 col-12 textoSobreAzul">
+                                <div class="textocentrado row flex-wrap">
+                                    <h3 class="titulo col">También puedes visitar nuestro blog</h3>
+                                    <p class="col">Tenemos muchas conversaciones muy interesantes</p>
+                                    <h1 class="pt-5 col">¡Pásate!</h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,7 +204,18 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group col-12 col-lg-6">Hello</div>
+                                    <div id="Capcha" class="form-group col-12 col-lg-6 text-center">
+                                        <label for="capcha_deposito">- Capcha  <span id="check_capcha">-</span></label>
+                                        <div id="capcha_deposito" class="from-group">
+                                            <input type="text" class="form-control" id="uno" placeholder=" Plataforma 1 " autocomplete="off">
+                                            <input type="text" class="form-control" id="dos" placeholder=" Plataforma 2 " autocomplete="off">
+                                            <label id="deposito" readonly="readonly" class="noselect"></label>
+                                        </div>
+                                        <div id="capcha_control" class="from-group">
+                                            <button id="capcha_validar" type="button" class="btn btn-primary" disabled >Validar</button>
+                                            <button id="capcha_recargar" type="button" class="btn btn-secondary"><span class="fa fa-refresh fa-spin"></span></button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="from-group col-12 ">
@@ -231,7 +237,7 @@
                                 <div class="form-row mt-3">
                                     <div class="from-group custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="politicasPriv">
-                                        <label class="custom-control-label" for="politicasPriv">He leído y acepto las <a data-toggle="modal" data-target="#politicasPrivacidad">políticas de privacidad</a></label>
+                                        <label class="custom-control-label" for="politicasPriv">He leído y acepto las <a class="text-primary" data-toggle="modal" data-target="#politicasPrivacidad">políticas de privacidad</a></label>
                                     </div>
                                 </div>
                                 <small class="form-text text-muted">* Los campos son opcionales.</small>
@@ -346,75 +352,126 @@
         </section>
 
         <section id="contenidoTotal" class="container mw-80">
-            <section id="cursosList" class="row p-0">
-                <div class="col">
+            <section id="cursosList" class="container-fluid p-0">
+                <div class="row justify-content-center">
                     <h1 id="cursosBasicos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Básicos</h1>
                     <p class="text-justify">Nuestros cursos básicos de fotografía representan el primer paso dentro de nuestro itinerario formativo y no requieren conocimientos previos de fotografía. Con más de veinte años de experiencia en nuestros cursos básicos consideramos que nuestro programa es el más adecuado para aprender el manejo en manual de la cámara fotográfica y entender los conceptos básicos de la técnica fotográfica.</p>
                     <div class="row">
                         <div class="col-sm-auto">
-                            <h4>INICIACIÓN A LA FOTOGRAFÍA</h4>
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >INICIACIÓN A LA FOTOGRAFÍA</h4>
                             <p>¿Tienes una cámara digital y quieres aprender a sacarle todo el provecho?</p>
                             <p>Este curso te enseña el funcionamiento de la cámara, objetivos y accesorios. Aprende el control del movimiento y la profundidad de campo, a saber utilizar los modos de medición y los sistemas de enfoque. Además de empezar a cuidar el encuadre y la composición, con salidas prácticas en grupo y análisis de las fotos realizadas.</p>
                         </div>
                         <img src="images/cursobásico.jpg" class="h-50 w-50" alt="foto_curso_basico" >
                     </div>
                 </div>
-                <div class="col-md-auto">
+                <div class="row justify-content-center">
                     <h1 id="cursosIntermedios" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Intermedios</h1>
                     <p class="text-justify">Estos curso requieren conocimientos básicos de fotografía y están orientados para los alumnos que hayan realizado el curso básico de fotografía o tengan conocimientos equivalentes. Seis cursos intermedios para aprender los programas de edición como Adobe Photoshop, Camera RAW y Photoshop Lightroom, profundizar en la técnica de toma fotográfica o iniciarse en el laboratorio clásico en blanco y negro.</p>
                     <div class="row">
                         <div class="col-md-auto">
-                            <h4>AVANZADO DE FOTOGRAFÍA</h4>
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >AVANZADO DE FOTOGRAFÍA</h4>
                             <p>Dirigido a alumnos que ya conocen los fundamentos de la fotografía avanzamos en conocimientos de iluminación, fotometría y composición trabajando en los cuatro géneros más importantes: Bodegón, retrato, paisaje y reportaje. Además aprendemos los fundamentos y ajustes básicos de la edición y el retoque.</p>
                             <img src="images/pageHeaderAnuncio1_1.jpg" alt="" class="h-50 w-50">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-auto">
+                <div class="row justify-content-center">
                     <h1 id="cursosEspecificos" class="text-uppercase text-center font-weight-bold tipo_curso">Cursos Específicos</h1>
                     <p class="text-justify">Los cursos específicos requieren un conocimiento medio de fotografía y están diseñados para aportar al alumno todos los conocimientos necesarios para perfeccionar una técnica específica dentro del mundo de la fotografía. Comprender el comportamiento de la luz natural y artificial o profundizar en el apasionante mundo de la fotografía documental y creativa.</p>
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h4>EXPERTO EN ILUMINACIÓN</h4>
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >EXPERTO EN ILUMINACIÓN</h4>
                             <p>Dirigido a aquellos que quieren aprender las técnicas específicas del control de la iluminación en estudio y exteriores, desde el fotoproducto hasta prácticas con modelos. Puedes utilizar nuestro estudio y equipos de iluminación portátiles para tus prácticas individuales.</p>
                             <img src="images/expertoiluminacion.jpg" alt="" class="h-50 w-50">
                         </div>
-                        <div class="col-md-auto">
-                            <h4>FOTOGRAFÍA DE ARQUITECTURA E INTERIORES</h4>
+                        <div class="col-md-6">
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >FOTOGRAFÍA DE ARQUITECTURA E INTERIORES</h4>
                             <p>Aprende las técnicas necesarias para realizar fotografías de arquitectura, tanto interior como exterior, y los ajustes necesarios para lograr un acabado profesional.</p>
                             <img src="images/interiores.jpg" alt="" class="h-50 w-50">
                         </div>
-                        <div class="col-md-auto">
-                            <h4>MAQUETACIÓN CON ADOBE INDESING PARA FOTÓGRAFOS</h4>
+                        <div class="col-md-6">
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >MAQUETACIÓN CON ADOBE INDESING PARA FOTÓGRAFOS</h4>
                             <p>InDesign es una herramienta imprescindible para el fotógrafo actual que quiera aprender a maquetar desde un dossier personal a un álbum de fotos de manera rápida y sencilla.</p>
                             <img src="images/maquetacion.jpg" alt="" class="h-50 w-50">
                         </div>
-                        <div class="col-md-auto">
-                            <h4>FOTOGRAFÍA DE PAISAJE</h4>
+                        <div class="col-md-6">
+                            <h4 class="text-uppercase font-weight-light tipo_curso pl-4" >FOTOGRAFÍA DE PAISAJE</h4>
                             <p>¡Enamórate del paisaje! Con este curso aprenderás las claves de uno de los grandes géneros fotográficos a través del paisaje del Torcal de Antequera.</p>
                             <img src="images/paisajes.jpg" alt="" class="h-50 w-50">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-auto">
-                    <h1 id="cursosAmedida" class="text-uppercase text-center font-weight-bold tipo_curso">CURSOS A MEDIDA</h1>
-                    <p class="text-justify">Si necesitas una formación personalizada tanto en contenidos como en horarios en la escuela realizamos clases a medida. Diseñamos cursos para empresas que necesiten formar a su equipo o para particulares que requieran de ciertos conocimientos. Tanto si eres un profesional con ganas de actualizarse o resolver dudas, como si eres un aficionado que quiere aprender o buscar formación puntual dentro de algún área fotográfica, en la escuela podemos crear esa formación a medida gracias a nuestro amplio equipo de profesionales.</p>
-                    <p class="text-justify">Si deseas información sobre los cursos a medida puedes llamarnos o escribirnos un mail, elaboraremos un programa teórico-práctico para que los conocimientos se asimilen de la mejor manera. La fecha para el comienzo y realización del curso se establece entre el cliente y la escuela una vez definidos los contenidos del programa.</p>
-                    <p class="text-justify">Además los cursos dirigidos a trabajadores por cuenta ajena de una empresa son susceptibles de bonificación a través de la Fundación DAW1.</p>
-                    <p class="text-justify">Contacta con nosotros para más información.</p>
+                <div class="jumbotron jumbotron-fluid col-md-auto">
+                    <div class="container">
+                        <h1 id="cursosAmedida" class="text-uppercase text-center font-weight-bold tipo_curso">CURSOS A MEDIDA</h1>
+                        <div class="container-fluid">
+                            <p class="text-justify">Si necesitas una formación personalizada tanto en contenidos como en horarios en la escuela realizamos clases a medida. Diseñamos cursos para empresas que necesiten formar a su equipo o para particulares que requieran de ciertos conocimientos. Tanto si eres un profesional con ganas de actualizarse o resolver dudas, como si eres un aficionado que quiere aprender o buscar formación puntual dentro de algún área fotográfica, en la escuela podemos crear esa formación a medida gracias a nuestro amplio equipo de profesionales.</p>
+                            <p class="text-justify">Si deseas información sobre los cursos a medida puedes llamarnos o escribirnos un mail, elaboraremos un programa teórico-práctico para que los conocimientos se asimilen de la mejor manera. La fecha para el comienzo y realización del curso se establece entre el cliente y la escuela una vez definidos los contenidos del programa.</p>
+                            <p class="text-justify">Además los cursos dirigidos a trabajadores por cuenta ajena de una empresa son susceptibles de bonificación a través de la Fundación DAW1.</p>
+                            <p class="text-justify">Contacta con nosotros para más información.</p>
+                        </div>
+                    </div>
                 </div>
+                
             </section>
+            <div id="espaciador"></div>
             <section id="proyectos" class="row">
-                adjsdajhdsa
+                
+                <div id="carouselMenu2" class="carousel slide w-100" data-ride="carousel" data-interval="200000" data-keyboard="true" data-pause="hover">
+                    <div class="carousel-inner h-100vh container-fluid">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption row p-0">
+                                <div class="anuncio1 col-sm-6 textoSobreAzul">
+                                    <div class="textocentrado d-flex flex-column align-content-around">
+                                        <h5>¿Quieres aprender a tomar buenas fotos?</h5>
+                                        <p>¡Pues apuntate <a href="#" class="Llamativo font-weight-bold">YA</a> a nuestros cursos de fotografía!</p>
+                                        <div class="badge badge-pill badge-dark d-sm-none d-block " data-toggle="modal" data-target="#register">
+                                            <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 anuncio1_1"></div>
+                                <div class="col col-sm-6 anuncio1_1"></div>
+                                <div id="Inscribirse" class="anuncio1 col-sm-6 d-sm-block d-none">
+                                    <div class="textocentrado text-wrap badge badge-pill badge-dark" data-toggle="modal" data-target="#register">
+                                            <span class="Llamativo" >Inscríbete</span> para acceder a nuestros cursos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption row p-0">
+                                <div class="anuncio2 col-12 textoSobreAzul">
+                                    <div class="textocentrado">
+                                        <h3 class="titulo">¡Comienzan las vacaciones!</h3>
+                                        <p class="subtitulo">Y con ellas ...</p>
+                                        <p>Nuestros talleres de verano !!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselMenu" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselMenu" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
             </section>
             <section id="Blog" class="row">
                 asdasdasdsad
             </section>
         </section>
 
-        <footer id="linksAndFun" class="d-flex justify-content-around w-100 bg-dark">
-                <a class="text-center"><p class="fa fa-at"></p> Fernando.Leiva.Brenes@gmail.com</a>
-                <a href="https://github.com/FernandoLeivaBrenes" class="text-right"><p class="fa fa-github"></p> FernandoLeivaBrenes</a>
+        <footer id="linksAndFun" class="row justify-content-around justify-content-sm-between justify-content-md-around bg-dark">
+                <a class="m-2 col"><p class="fa fa-at"></p> Fernando.Leiva.Brenes@gmail.com</a>
+                <a href="https://github.com/FernandoLeivaBrenes" class="m-2 col"><p class="fa fa-github"></p> FernandoLeivaBrenes</a>
+                
         </footer>
 </body>
 </html>
